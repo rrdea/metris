@@ -10,9 +10,15 @@ Aplikasi Metris, penjualan paket wisata bahari di Indonesia. Untuk tahap awal, h
 
 ### 2. Melakukan perubahan
 #### a. Pull
-'git pull'
 Sebelum melakukan perubahan, pastikan untuk pull terlebih dahulu
+
+`git pull`
+
 #### b. Push
-'git add .'
-'git commit -m "<Pesan perubahan, bahasa inggris kalau bisa>"'
-'git push"
+Setelah selesai menambahkan perubahan, push perubahan
+
+`git add .`
+
+`git commit -m "<Pesan perubahan, bahasa inggris kalau bisa>"`
+
+`git push`
