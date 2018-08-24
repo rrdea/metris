@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Metris</string>
+
+    <string name="app_description">Metris membantu Anda untuk memulai liburan yang tak terlupakan</string>
+
+    <string name="welcome_title_1">Memesan Paket</string>
+    <string name="welcome_title_2">Memesan Penjemputan</string>
+
+    <string name="button_start">Mulai</string>
+
+    <string name="welcome_already">Sudah memiliki akun?</string>
+    <string name="welcome_login">Masuk</string>
+
 </resources>
