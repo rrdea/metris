@@ -1,112 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".Welcome.WelcomeActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/logo_blue" />
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/marketsaturday"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="@string/app_name"
-            android:textColor="@color/blueText"
-            android:textSize="20pt" />
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    </LinearLayout>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/logo_blue" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/intro_dot"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/marketsaturday"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/blueText"
+                android:textSize="20pt" />
 
-        <ImageView
-            android:layout_width="250dp"
-            android:layout_height="200dp"
-            android:layout_marginBottom="20dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/welcomeimage" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="200dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:text="@string/app_description"
-            android:textAlignment="center" />
-
-        <Button
-            android:id="@+id/welcome_button_start"
-            android:layout_width="250dp"
-            android:layout_height="48dp"
             android:layout_marginBottom="8dp"
-            android:background="@drawable/button"
-            android:text="@string/welcome_button_start"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/intro_dot"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-    </LinearLayout>
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/welcomeimage" />
 
-    <LinearLayout
-        android:id="@+id/intro_dot"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/app_description"
+                android:textAlignment="center" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/welcome_button_start"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button"
+                android:text="@string/welcome_button_start"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/intro_dot"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/welcome_textview_already"
-            android:textColor="@color/hintText"
-            android:textSize="6pt" />
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="@string/welcome_textview_login"
-            android:textColor="@color/blueText"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/welcome_textview_already"
+                android:textColor="@color/hintText"
+                android:textSize="6pt" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/welcome_textview_login"
+                android:textColor="@color/blueText"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
 
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

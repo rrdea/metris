@@ -29,6 +29,20 @@
     <string name="intro_4_textview_subtitle_2">dengan konservasi</string>
     <string name="intro_4_textview_content">Tidak hanya menikmati alam dan bidaya, tapi kamu juga turut serta dalam konservasi alam!</string>
 
+    <string name="register_title_1">Daftar sekali</string>
+    <string name="register_title_2">untung berkali-kali!</string>
+    <string name="register_other_option_register">atau daftar melalui</string>
+    <string name="register_button_next">Lanjutkan</string>
+    <string name="register_button_register">Daftar</string>
 
+    <string name="input_hint_name">masukkan nama</string>
+    <string name="input_hint_emai">masukkan email</string>
+    <string name="input_hint_password">masukkan password</string>
+    <string name="input_hint_retype_password">ulangi password</string>
+    <string name="input_hint_ktp">masukkan nomor KTP</string>
+    <string name="input_hint_phone">masukkan nomor telepon</string>
+    <string name="input_hint_address">masukkan alamat</string>
+    <string name="input_hint_province">pilih provinsi</string>
+    <string name="input_hint_city">pilih kota</string>
 
 </resources>

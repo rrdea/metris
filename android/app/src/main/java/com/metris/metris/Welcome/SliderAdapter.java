@@ -1,6 +1,7 @@
 package com.metris.metris.Welcome;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.metris.metris.Authorization.RegisterActivity;
 import com.metris.metris.R;
 
 public class SliderAdapter extends PagerAdapter {
@@ -61,6 +63,8 @@ public class SliderAdapter extends PagerAdapter {
         return view == (LinearLayout) object;
     }
 
+
+
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
@@ -71,11 +75,20 @@ public class SliderAdapter extends PagerAdapter {
         TextView sliderSubtitle1 = (TextView) view.findViewById(R.id.intro_slider_subtitle_1);
         TextView sliderSubtitle2 = (TextView) view.findViewById(R.id.intro_slider_subtitle_2);
         TextView sliderContent = (TextView) view.findViewById(R.id.intro_slider_content);
+        Button buttonRegister = (Button) view.findViewById(R.id.intro_button_register);
 
         sliderImageView.setImageResource(sliderImage[position]);
         sliderSubtitle1.setText(context.getResources().getString(sliderSubs1[position]));
         sliderSubtitle2.setText(context.getResources().getString(sliderSubs2[position]));
         sliderContent.setText(context.getResources().getString(sliderCons[position]));
+
+        buttonRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent welcomeIntent = new Intent(context, RegisterActivity.class);
+                context.startActivity(welcomeIntent);
+            }
+        });
 
         container.addView(view);
         return view;
