@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Authorization.RegisteredActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/registered_title_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registered_title_1"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/registered_title_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registered_title_2"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/registered_title_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registered_title_3"
+            android:textAlignment="center"
+            android:textColor="@color/blueText"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/welcomeimage" />
+
+        <Button
+            android:id="@+id/registered_button_login"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button"
+            android:text="@string/registered_button_login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

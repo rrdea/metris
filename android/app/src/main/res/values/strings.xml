@@ -45,4 +45,12 @@
     <string name="input_hint_province">pilih provinsi</string>
     <string name="input_hint_city">pilih kota</string>
 
+    <string name="registered_title_1">Selesai!</string>
+    <string name="registered_title_2">Kini berlibur</string>
+    <string name="registered_title_3">akan semakin mudah.</string>
+    <string name="registered_button_login">Masuk</string>
+
+    <string name="login_button_login">Masuk</string>
+
+
 </resources>
