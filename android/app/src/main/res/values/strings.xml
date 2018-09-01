@@ -51,6 +51,11 @@
     <string name="registered_button_login">Masuk</string>
 
     <string name="login_button_login">Masuk</string>
+    <string name="login_title_1">Selangkah lebih dekat</string>
+    <string name="login_title_2">dari liburan!</string>
+    <string name="login_forget_password">Lupa sandi?</string>
+    <string name="login_dont_have_account">Belum memiliki akun?</string>
+    <string name="login_textview_register">Daftar</string>
 
 
 </resources>

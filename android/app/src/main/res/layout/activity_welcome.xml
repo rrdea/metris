@@ -108,6 +108,7 @@
                 android:textSize="6pt" />
 
             <TextView
+                android:id="@+id/welcome_textview_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"

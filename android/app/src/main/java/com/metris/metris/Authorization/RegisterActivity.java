@@ -17,6 +17,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.metris.metris.R;
+import com.metris.metris.Welcome.IntroductionActivity;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -24,6 +25,7 @@ public class RegisterActivity extends AppCompatActivity {
     FragmentPagerAdapter fragmentPagerAdapter;
     private LinearLayout registerDotLayout;
     private TextView[] dots;
+    private TextView registerTextViewLogin;
 
     private Button registerButton;
 
@@ -32,13 +34,26 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        //instantiation
         registerDotLayout = (LinearLayout) findViewById(R.id.register_dot);
         registerButton = (Button) findViewById(R.id.register_button_register);
         registerViewPager = (ViewPager) findViewById(R.id.register_pager);
+        registerTextViewLogin = (TextView) findViewById(R.id.register_textview_login);
+        registerTextViewLogin = (TextView) findViewById(R.id.register_textview_login);
+
         fragmentPagerAdapter = new RegisterAdapter(getSupportFragmentManager());
         registerViewPager.setAdapter(fragmentPagerAdapter);
 
+        //action
         addDotsIndicators(0);
+        registerTextViewLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent welcomeIntent = new Intent(RegisterActivity.this, LoginActivity.class);
+                startActivity(welcomeIntent);
+                finish();
+            }
+        });
 
         registerViewPager.addOnPageChangeListener(viewListener);
 

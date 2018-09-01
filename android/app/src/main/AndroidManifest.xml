@@ -19,7 +19,9 @@
         <activity android:name=".Welcome.WelcomeActivity" />
         <activity android:name=".Welcome.IntroductionActivity" />
         <activity android:name=".Authorization.RegisterActivity" />
-        <activity android:name=".Authorization.RegisteredActivity"></activity>
+        <activity android:name=".Authorization.RegisteredActivity" />
+        <activity android:name=".Authorization.LoginActivity" />
+        <activity android:name=".Authorization.ForgetPasswordActivity"></activity>
     </application>
 
 </manifest>

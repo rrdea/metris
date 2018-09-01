@@ -1,5 +1,6 @@
 package com.metris.metris.Welcome;
 
+import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.metris.metris.Authorization.LoginActivity;
 import com.metris.metris.R;
 
 public class IntroductionActivity extends AppCompatActivity {
@@ -16,6 +18,7 @@ public class IntroductionActivity extends AppCompatActivity {
     private LinearLayout introDotLayout;
     private TextView introTitle;
     private SliderAdapter sliderAdapter;
+    private TextView introTextViewLogin;
 
     private TextView[] dots;
 
@@ -31,9 +34,20 @@ public class IntroductionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introduction);
 
+        //instant
         introViewPager = (ViewPager) findViewById(R.id.intro_viewpager);
         introDotLayout = (LinearLayout) findViewById(R.id.intro_dot);
         introTitle = (TextView) findViewById(R.id.intro_title);
+        introTextViewLogin = (TextView) findViewById(R.id.intro_textview_login);
+
+        //action
+        introTextViewLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent welcomeIntent = new Intent(IntroductionActivity.this, LoginActivity.class);
+                startActivity(welcomeIntent);
+            }
+        });
 
         sliderAdapter = new SliderAdapter(this);
         introViewPager.setAdapter(sliderAdapter);
