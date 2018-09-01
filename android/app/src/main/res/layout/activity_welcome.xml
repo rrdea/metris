@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".Welcome.WelcomeActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="40dp"
@@ -32,51 +35,78 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/intro_dot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <ImageView
             android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:src="@drawable/hammock" />
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/welcomeimage" />
 
         <TextView
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/normal"
+            android:layout_marginBottom="20dp"
             android:text="@string/app_description"
-            android:textAlignment="center"
-            android:textColor="@color/defaultText" />
+            android:textAlignment="center" />
 
         <Button
-            android:layout_width="200dp"
+            android:id="@+id/welcome_button_start"
+            android:layout_width="250dp"
             android:layout_height="48dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/button"
-            android:fontFamily="@font/semibold"
-            android:text="@string/button_start"
-            android:textColor="@color/white" />
+            android:text="@string/welcome_button_start"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/intro_dot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:layout_marginTop="20dp"
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/welcome_already"
-            android:fontFamily="@font/normal"
-            android:textSize="5pt"
-            android:textColor="@color/hintText"/>
+            android:layout_marginTop="10dp"
+            android:text="@string/welcome_textview_already"
+            android:textColor="@color/hintText"
+            android:textSize="6pt" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/welcome_login"
-            android:fontFamily="@font/semibold"
-            android:textColor="@color/blueText"/>
+            android:layout_marginTop="5dp"
+            android:text="@string/welcome_textview_login"
+            android:textColor="@color/blueText"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3A89FE</color>
+    <color name="colorPrimary">#00a6e2</color>
     <color name="colorAccent">#F6E734</color>
 
     <color name="white">#FFFFFF</color>
     <color name="transparantwhite">#CCCCCC</color>
+    <color name="transparantfull">#FFFFFFFF</color>
 
     <color name="defaultText">#393939</color>
     <color name="headerText">#333333</color>
-    <color name="blueText">#3A89FE</color>
+    <color name="blueText">#00a6e2</color>
     <color name="hintText">#A5A5A5</color>
 
 </resources>

@@ -3,12 +3,32 @@
 
     <string name="app_description">Metris membantu Anda untuk memulai liburan yang tak terlupakan</string>
 
-    <string name="welcome_title_1">Memesan Paket</string>
-    <string name="welcome_title_2">Memesan Penjemputan</string>
+    <string name="welcome_button_start">Mulai</string>
 
-    <string name="button_start">Mulai</string>
+    <string name="welcome_textview_already">Sudah memiliki akun?</string>
+    <string name="welcome_textview_login">Masuk</string>
+    <string name="intro_button_register_now">Daftar sekarang!</string>
 
-    <string name="welcome_already">Sudah memiliki akun?</string>
-    <string name="welcome_login">Masuk</string>
+    <string name="intro_1_textview_title">Memesan paket</string>
+    <string name="intro_1_textview_subtitle_1">Banyak pilihan</string>
+    <string name="intro_1_textview_subtitle_2">paket wisata</string>
+    <string name="intro_1_textview_content">Tersedia berbagai jenis paket wisata alam dan bahari, tinggal pilih yang kamu suka!</string>
+
+    <string name="intro_2_textview_title">Memesan penjemputan</string>
+    <string name="intro_2_textview_subtitle_1">Tak ada kendaraan?</string>
+    <string name="intro_2_textview_subtitle_2">Tak masalah!</string>
+    <string name="intro_2_textview_content">Ingin ke pantai tapi tidak memiliki kendaraan pribadi? Mudah! Kami menyediakan jasa penjemputan.</string>
+
+    <string name="intro_3_textview_title">Membantu kearifan lokal</string>
+    <string name="intro_3_textview_subtitle_1">Alam, budaya,</string>
+    <string name="intro_3_textview_subtitle_2">dan kearifan lokal</string>
+    <string name="intro_3_textview_content">Setiap desa menawarkan budaya dan keindahan alam yang dikemas dalam paket wisata menarik.</string>
+
+    <string name="intro_4_textview_title">Melindungi alam</string>
+    <string name="intro_4_textview_subtitle_1">Alam perlu dilindungi</string>
+    <string name="intro_4_textview_subtitle_2">dengan konservasi</string>
+    <string name="intro_4_textview_content">Tidak hanya menikmati alam dan bidaya, tapi kamu juga turut serta dalam konservasi alam!</string>
+
+
 
 </resources>

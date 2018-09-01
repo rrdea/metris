@@ -18,29 +18,7 @@
                                 <PersistentState>
                                   <option name="children">
                                     <map>
-                                      <entry key="foregroundClipArt">
-                                        <value>
-                                          <PersistentState>
-                                            <option name="values">
-                                              <map>
-                                                <entry key="trimmed" value="true" />
-                                              </map>
-                                            </option>
-                                          </PersistentState>
-                                        </value>
-                                      </entry>
                                       <entry key="foregroundImage">
-                                        <value>
-                                          <PersistentState>
-                                            <option name="values">
-                                              <map>
-                                                <entry key="trimmed" value="true" />
-                                              </map>
-                                            </option>
-                                          </PersistentState>
-                                        </value>
-                                      </entry>
-                                      <entry key="foregroundText">
                                         <value>
                                           <PersistentState>
                                             <option name="values">
@@ -56,8 +34,14 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="3a89fe" />
-                                      <entry key="foregroundImage" value="E:\Metris\Assets\Logo\logo_white.png" />
+                                      <entry key="backgroundColor" value="ffffff" />
+                                      <entry key="backgroundLayerName" value="blue_logo_background" />
+                                      <entry key="foregroundImage" value="E:\Metris\Assets\Logo\logo_blue.png" />
+                                      <entry key="foregroundLayerName" value="blue_logo_foreground" />
+                                      <entry key="generateLegacyIcon" value="false" />
+                                      <entry key="generateRoundIcon" value="false" />
+                                      <entry key="generateWebIcon" value="false" />
+                                      <entry key="outputName" value="blue_icon" />
                                     </map>
                                   </option>
                                 </PersistentState>
