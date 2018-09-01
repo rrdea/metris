@@ -4,103 +4,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/register_layout_name"
+    <LinearLayout
+        android:id="@+id/register_layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_name" />
+
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/edittext"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:background="@color/white"
+            android:hint="@string/input_hint_name"
+            android:textSize="6pt" />
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginRight="15dp"
-                android:src="@drawable/ic_name" />
+    </LinearLayout>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:hint="@string/input_hint_name"
-                android:textSize="6pt" />
+    <LinearLayout
+        android:id="@+id/register_layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-        </LinearLayout>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_email" />
 
-        <LinearLayout
-            android:id="@+id/register_layout_email"
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/edittext"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:background="@color/white"
+            android:hint="@string/input_hint_emai"
+            android:inputType="textEmailAddress"
+            android:textSize="6pt" />
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginRight="15dp"
-                android:src="@drawable/ic_email" />
+    </LinearLayout>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:hint="@string/input_hint_emai"
-                android:textSize="6pt" />
+    <LinearLayout
+        android:id="@+id/register_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-        </LinearLayout>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_password" />
 
-        <LinearLayout
-            android:id="@+id/register_layout_password"
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/edittext"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:background="@color/white"
+            android:hint="@string/input_hint_password"
+            android:inputType="textPassword"
+            android:textSize="6pt" />
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginRight="15dp"
-                android:src="@drawable/ic_password" />
+    </LinearLayout>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:hint="@string/input_hint_password"
-                android:textSize="6pt" />
+    <LinearLayout
+        android:id="@+id/register_layout_retype_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-        </LinearLayout>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_password" />
 
-        <LinearLayout
-            android:id="@+id/register_layout_retype_password"
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/edittext"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:background="@color/white"
+            android:hint="@string/input_hint_retype_password"
+            android:inputType="textPassword"
+            android:textSize="6pt" />
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginRight="15dp"
-                android:src="@drawable/ic_password" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:hint="@string/input_hint_retype_password"
-                android:textSize="6pt" />
-
-        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

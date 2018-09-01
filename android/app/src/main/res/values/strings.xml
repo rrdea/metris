@@ -57,5 +57,8 @@
     <string name="login_dont_have_account">Belum memiliki akun?</string>
     <string name="login_textview_register">Daftar</string>
 
+    <string name="forget_button_setup">Atur ulang sandi</string>
+    <string name="forget_title_1">Mungkin kamu lupa</string>
+    <string name="forget_title_2">karena butuh liburan!</string>
 
 </resources>

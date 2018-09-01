@@ -15,6 +15,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private Button loginButtonLogin;
     private TextView loginTextViewRegister;
+    private TextView loginTextViewForget;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +25,16 @@ public class LoginActivity extends AppCompatActivity {
         //instantiation
         loginButtonLogin = (Button)findViewById(R.id.login_button_login);
         loginTextViewRegister = (TextView) findViewById(R.id.login_textview_register);
+        loginTextViewForget = (TextView) findViewById(R.id.login_textview_forget);
 
         //action
+        loginTextViewForget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, ForgetPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
         loginTextViewRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
