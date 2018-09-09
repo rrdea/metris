@@ -61,4 +61,23 @@
     <string name="forget_title_1">Mungkin kamu lupa</string>
     <string name="forget_title_2">karena butuh liburan!</string>
 
+    <string name="title_home">Beranda</string>
+    <string name="title_mytrips">Perjalanan Saya</string>
+    <string name="title_myaccount">Akun Saya</string>
+    <string name="title_others">Lainnya</string>
+
+    <string name="topay_title">Anda belum memiliki trip belum dibayar</string>
+    <string name="topay_subtitle">Trip yang belum dibayar akan ditampilkan disini</string>
+    <string name="completed_title">Anda belum memiliki trip selesai</string>
+    <string name="completed_subtitle">Trip yang telah selesai akan ditampilkan disini</string>
+    <string name="upcoming_title">Anda belum memiliki trip mendatang</string>
+    <string name="upcoming_subtitle">Trip mendatang akan ditampilkan disini</string>
+
+    <string name="mytrips_tab1">Belum dibayar</string>
+    <string name="mytrips_tab2">Mendatang</string>
+    <string name="mytrips_tab3">Selesai</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
 </resources>

@@ -21,8 +21,8 @@ import com.metris.metris.Welcome.IntroductionActivity;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    ViewPager registerViewPager;
-    FragmentPagerAdapter fragmentPagerAdapter;
+    private ViewPager registerViewPager;
+    private FragmentPagerAdapter fragmentPagerAdapter;
     private LinearLayout registerDotLayout;
     private TextView[] dots;
     private TextView registerTextViewLogin;
