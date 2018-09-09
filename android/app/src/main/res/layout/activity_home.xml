@@ -51,6 +51,7 @@
     </FrameLayout>
 
     <android.support.design.widget.BottomNavigationView
+        app:itemBackground="@color/white"
         android:id="@+id/navigation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
