@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Metris</string>
+    <string name="app_name_header">metris</string>
 
     <string name="app_description">Metris membantu Anda untuk memulai liburan yang tak terlupakan</string>
 
@@ -79,5 +80,22 @@
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string name="default_value">-</string>
+
+    <string name="myaccount_edit_button">Sunting</string>
+
+    <string name="others_sub_information">Informasi</string>
+    <string name="others_sub_account">Akun Saya</string>
+    <string name="others_sub_application">Aplikasi</string>
+
+    <string name="others_help">Bantuan</string>
+    <string name="others_language">Bahasa</string>
+    <string name="others_call_us">Hubungi Kami</string>
+    <string name="others_about_us">Tentang Kami</string>
+    <string name="others_privacy_policy">Kebijakan Privasi</string>
+    <string name="others_term_of_service">Ketentuan Layanan</string>
+    <string name="others_logout">Keluar</string>
+    <string name="others_close">Tutup</string>
 
 </resources>
