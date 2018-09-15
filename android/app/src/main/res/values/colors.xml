@@ -9,6 +9,7 @@
     <color name="transparantfull">#FFFFFFFF</color>
 
     <color name="defaultText">#393939</color>
+    <color name="defaultText_1">#ff393939</color>
     <color name="headerText">#333333</color>
     <color name="blueText">#00a6e2</color>
     <color name="hintText">#A5A5A5</color>

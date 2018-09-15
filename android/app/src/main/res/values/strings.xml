@@ -98,4 +98,14 @@
     <string name="others_logout">Keluar</string>
     <string name="others_close">Tutup</string>
 
+    <string name="home_promos_title">Promo saat ini</string>
+    <string name="home_promos_subtitle">Dapatkan promo menarik dari Metris untuk Anda</string>
+    <string name="home_beach_title">Pantai populer</string>
+    <string name="home_beach_subtitle">Kunjungi pantai yang sedang populer saat ini</string>
+    <string name="home_package_title">Paket destinasi</string>
+    <string name="home_package_subtitle">Rencanakan perjalanan anda dengan paket terbaik</string>
+
+    <string name="home_beach">Pantai</string>
+    <string name="home_package">Paket</string>
+
 </resources>
